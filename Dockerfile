@@ -12,8 +12,15 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
-RUN apt-get update -y && apt-get install git
+RUN apt-get update  && apt-get install -y \
+    git \
+    nodejs \
+    yarn
 
 RUN git init
+
+WORKDIR /etc/ruby_practice/hello_app
+
+RUN bundle update && bundle install
 
 CMD /bin/bash
