@@ -19,8 +19,4 @@ RUN apt-get update  && apt-get install -y \
 
 RUN git init
 
-WORKDIR /etc/ruby_practice/hello_app
-
-RUN bundle update && bundle install
-
 CMD /bin/bash
