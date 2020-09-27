@@ -1,0 +1,6 @@
+[submodule "toy_app"]
+	path = toy_app
+	url = https://github.com/KAZUTO-code/toy_app.git
+[submodule "hello_app"]
+	path = hello_app
+	url = https://github.com/KAZUTO-code/hello_app.git
