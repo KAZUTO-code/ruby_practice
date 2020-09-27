@@ -4,3 +4,6 @@
 [submodule "hello_app"]
 	path = hello_app
 	url = https://github.com/KAZUTO-code/hello_app.git
+[submodule "sample_app"]
+	path = sample_app
+	url = https://github.com/KAZUTO-code/sample_app.git
